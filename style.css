@@ -68,6 +68,13 @@ body {
   color: #ffffff;
 }
 
+
+.language-link {
+  border: 1px solid rgba(217, 233, 248, 0.55);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+}
+
 .hero-content {
   padding-top: 3.5rem;
   max-width: 720px;
@@ -157,7 +164,7 @@ body {
 }
 
 .contact-box {
-  text-align: left;
+  text-align: start;
 }
 
 .enquiry-form {
