@@ -98,14 +98,41 @@
 
       <section class="section section-alt" id="contact">
         <div class="container contact-box">
-          <h2>Contact</h2>
+          <h2>Enquiry Form</h2>
           <p>
-            For supplier partnerships, pricing requests, and order discussions, contact our team.
+            Share your timber requirements, target volumes, and delivery destinations. Our trade
+            team will respond with suitable supply options.
           </p>
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:info@polarbeartimber.com">info@polarbeartimber.com</a>
-          </p>
+          <form class="enquiry-form" method="POST" action="PASTE_YOUR_FORMSPREE_ENDPOINT_HERE">
+            <div class="form-grid">
+              <label for="full-name">
+                Full Name
+                <input id="full-name" name="full-name" type="text" autocomplete="name" required />
+              </label>
+
+              <label for="company-name">
+                Company Name
+                <input id="company-name" name="company-name" type="text" autocomplete="organization" required />
+              </label>
+
+              <label for="email-address">
+                Email Address
+                <input id="email-address" name="email-address" type="email" autocomplete="email" required />
+              </label>
+
+              <label for="country">
+                Country
+                <input id="country" name="country" type="text" autocomplete="country-name" required />
+              </label>
+
+              <label class="full-width" for="message">
+                Message
+                <textarea id="message" name="message" rows="6" required></textarea>
+              </label>
+            </div>
+
+            <button type="submit" class="button form-submit">Send Enquiry</button>
+          </form>
         </div>
       </section>
     </main>
