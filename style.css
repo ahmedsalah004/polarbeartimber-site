@@ -42,11 +42,17 @@ body {
 }
 
 .brand {
-  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  line-height: 0;
+  flex-shrink: 0;
+}
+
+.brand-logo {
+  display: block;
+  width: auto;
+  height: clamp(2rem, 3.6vw, 2.45rem);
 }
 
 .nav ul {
@@ -237,6 +243,11 @@ footer p {
   .nav {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.9rem;
+  }
+
+  .brand-logo {
+    height: 2rem;
   }
 
   .nav ul {
