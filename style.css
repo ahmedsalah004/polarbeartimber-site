@@ -44,15 +44,38 @@ body {
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 0.72rem;
   text-decoration: none;
-  line-height: 0;
+  color: #ffffff;
   flex-shrink: 0;
 }
 
-.brand-logo {
+.brand-icon {
   display: block;
-  width: auto;
-  height: clamp(2rem, 3.6vw, 2.45rem);
+  width: clamp(2.35rem, 3.2vw, 2.85rem);
+  height: clamp(2.35rem, 3.2vw, 2.85rem);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(217, 233, 248, 0.45);
+  padding: 0.2rem;
+}
+
+.brand-text {
+  display: inline-flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-text strong {
+  font-size: clamp(1rem, 1.35vw, 1.15rem);
+  letter-spacing: 0.02em;
+}
+
+.brand-text span {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #b8d4ee;
 }
 
 .nav ul {
@@ -246,8 +269,21 @@ footer p {
     gap: 0.9rem;
   }
 
-  .brand-logo {
-    height: 2rem;
+  .brand {
+    gap: 0.58rem;
+  }
+
+  .brand-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .brand-text strong {
+    font-size: 0.95rem;
+  }
+
+  .brand-text span {
+    font-size: 0.66rem;
   }
 
   .nav ul {
