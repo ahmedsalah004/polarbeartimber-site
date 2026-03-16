@@ -196,6 +196,32 @@ body {
   text-align: start;
 }
 
+
+.contact-details {
+  margin-top: 1.4rem;
+  padding: 1rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+}
+
+.contact-details h3 {
+  margin: 0 0 0.5rem;
+  color: var(--primary-dark);
+  font-size: 1.05rem;
+}
+
+.contact-details address {
+  margin: 0;
+  color: var(--muted);
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.contact-details + .enquiry-form {
+  margin-top: 1rem;
+}
+
 .enquiry-form {
   margin-top: 1.5rem;
   background: var(--surface);
@@ -262,6 +288,21 @@ footer p {
   margin: 0;
 }
 
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+footer address {
+  margin: 0;
+  font-style: normal;
+  color: #b7c8d7;
+  font-size: 0.86rem;
+}
+
 @media (max-width: 760px) {
   .nav {
     flex-direction: column;
@@ -301,6 +342,11 @@ footer p {
 
   .container {
     width: min(1100px, calc(100% - 2rem));
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .form-grid {
