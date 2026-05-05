@@ -354,7 +354,11 @@ html[lang="ar"] .hero-content {
   margin-inline: auto;
 }
 
-html[lang="ar"] .hero .hero-break-ar {
+html[lang="ar"] .hero-title-ar {
+  line-height: 1.22;
+}
+
+html[lang="ar"] .hero-title-ar-line {
   display: inline;
 }
 
@@ -373,8 +377,12 @@ html[lang="ar"] .hero p {
 }
 
 @media (max-width: 760px) {
-  html[lang="ar"] .hero .hero-break-ar {
-    display: none;
+  html[lang="ar"] .hero-title-ar {
+    line-height: 1.3;
+  }
+
+  html[lang="ar"] .hero-title-ar-line {
+    display: block;
   }
 
   .nav {
